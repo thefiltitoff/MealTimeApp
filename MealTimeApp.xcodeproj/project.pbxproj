@@ -13,6 +13,12 @@
 		2B9D217F28578ED50026ACF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D217D28578ED50026ACF6 /* Main.storyboard */; };
 		2B9D218128578ED60026ACF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D218028578ED60026ACF6 /* Assets.xcassets */; };
 		2B9D218428578ED60026ACF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D218228578ED60026ACF6 /* LaunchScreen.storyboard */; };
+		2B9D218C285792EB0026ACF6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D218B285792EB0026ACF6 /* CoreDataStack.swift */; };
+		2B9D218F285794170026ACF6 /* MealTimeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D218D285794170026ACF6 /* MealTimeApp.xcdatamodeld */; };
+		2B9D2194285794FC0026ACF6 /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D2190285794FC0026ACF6 /* Meal+CoreDataClass.swift */; };
+		2B9D2195285794FC0026ACF6 /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D2191285794FC0026ACF6 /* Meal+CoreDataProperties.swift */; };
+		2B9D2196285794FC0026ACF6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D2192285794FC0026ACF6 /* User+CoreDataClass.swift */; };
+		2B9D2197285794FC0026ACF6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D2193285794FC0026ACF6 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		2B9D218028578ED60026ACF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B9D218328578ED60026ACF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B9D218528578ED60026ACF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B9D218B285792EB0026ACF6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2B9D218E285794170026ACF6 /* MealTimeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealTimeApp.xcdatamodel; sourceTree = "<group>"; };
+		2B9D2190285794FC0026ACF6 /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B9D2191285794FC0026ACF6 /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B9D2192285794FC0026ACF6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B9D2193285794FC0026ACF6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		2B9D216B28578ED50026ACF6 = {
 			isa = PBXGroup;
 			children = (
+				2B9D2198285795510026ACF6 /* CoreDataEntities */,
 				2B9D217628578ED50026ACF6 /* MealTimeApp */,
 				2B9D217528578ED50026ACF6 /* Products */,
 			);
@@ -57,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				2B9D217728578ED50026ACF6 /* AppDelegate.swift */,
+				2B9D218B285792EB0026ACF6 /* CoreDataStack.swift */,
 				2B9D217928578ED50026ACF6 /* SceneDelegate.swift */,
+				2B9D218D285794170026ACF6 /* MealTimeApp.xcdatamodeld */,
 				2B9D217B28578ED50026ACF6 /* ViewController.swift */,
 				2B9D217D28578ED50026ACF6 /* Main.storyboard */,
 				2B9D218028578ED60026ACF6 /* Assets.xcassets */,
@@ -65,6 +80,17 @@
 				2B9D218528578ED60026ACF6 /* Info.plist */,
 			);
 			path = MealTimeApp;
+			sourceTree = "<group>";
+		};
+		2B9D2198285795510026ACF6 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D2190285794FC0026ACF6 /* Meal+CoreDataClass.swift */,
+				2B9D2191285794FC0026ACF6 /* Meal+CoreDataProperties.swift */,
+				2B9D2192285794FC0026ACF6 /* User+CoreDataClass.swift */,
+				2B9D2193285794FC0026ACF6 /* User+CoreDataProperties.swift */,
+			);
+			path = CoreDataEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9D2194285794FC0026ACF6 /* Meal+CoreDataClass.swift in Sources */,
+				2B9D2195285794FC0026ACF6 /* Meal+CoreDataProperties.swift in Sources */,
 				2B9D217C28578ED50026ACF6 /* ViewController.swift in Sources */,
 				2B9D217828578ED50026ACF6 /* AppDelegate.swift in Sources */,
+				2B9D218F285794170026ACF6 /* MealTimeApp.xcdatamodeld in Sources */,
 				2B9D217A28578ED50026ACF6 /* SceneDelegate.swift in Sources */,
+				2B9D2196285794FC0026ACF6 /* User+CoreDataClass.swift in Sources */,
+				2B9D218C285792EB0026ACF6 /* CoreDataStack.swift in Sources */,
+				2B9D2197285794FC0026ACF6 /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2B9D218D285794170026ACF6 /* MealTimeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2B9D218E285794170026ACF6 /* MealTimeApp.xcdatamodel */,
+			);
+			currentVersion = 2B9D218E285794170026ACF6 /* MealTimeApp.xcdatamodel */;
+			path = MealTimeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2B9D216C28578ED50026ACF6 /* Project object */;
 }

@@ -69,15 +69,12 @@
 		2B9D217628578ED50026ACF6 /* MealTimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				2B9D217728578ED50026ACF6 /* AppDelegate.swift */,
-				2B9D218B285792EB0026ACF6 /* CoreDataStack.swift */,
-				2B9D217928578ED50026ACF6 /* SceneDelegate.swift */,
-				2B9D218D285794170026ACF6 /* MealTimeApp.xcdatamodeld */,
-				2B9D217B28578ED50026ACF6 /* ViewController.swift */,
-				2B9D217D28578ED50026ACF6 /* Main.storyboard */,
-				2B9D218028578ED60026ACF6 /* Assets.xcassets */,
-				2B9D218228578ED60026ACF6 /* LaunchScreen.storyboard */,
-				2B9D218528578ED60026ACF6 /* Info.plist */,
+				2BFCD6F52896960500310EF4 /* StorageManager */,
+				2BFCD6F4289695F900310EF4 /* Entitites */,
+				2BFCD6F3289695D700310EF4 /* App */,
+				2BFCD6F8289696BF00310EF4 /* ViewControllers */,
+				2BFCD6F7289696B600310EF4 /* Storyboards */,
+				2BFCD6F6289696AD00310EF4 /* Resources */,
 			);
 			path = MealTimeApp;
 			sourceTree = "<group>";
@@ -91,6 +88,57 @@
 				2B9D2193285794FC0026ACF6 /* User+CoreDataProperties.swift */,
 			);
 			path = CoreDataEntities;
+			sourceTree = "<group>";
+		};
+		2BFCD6F3289695D700310EF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D217728578ED50026ACF6 /* AppDelegate.swift */,
+				2B9D217928578ED50026ACF6 /* SceneDelegate.swift */,
+				2B9D218528578ED60026ACF6 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BFCD6F4289695F900310EF4 /* Entitites */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D218D285794170026ACF6 /* MealTimeApp.xcdatamodeld */,
+			);
+			path = Entitites;
+			sourceTree = "<group>";
+		};
+		2BFCD6F52896960500310EF4 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D218B285792EB0026ACF6 /* CoreDataStack.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		2BFCD6F6289696AD00310EF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D218028578ED60026ACF6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BFCD6F7289696B600310EF4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D217D28578ED50026ACF6 /* Main.storyboard */,
+				2B9D218228578ED60026ACF6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BFCD6F8289696BF00310EF4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D217B28578ED50026ACF6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealTimeApp/Info.plist;
+				INFOPLIST_FILE = MealTimeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealTimeApp/Info.plist;
+				INFOPLIST_FILE = MealTimeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
